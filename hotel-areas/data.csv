@@ -1,0 +1,6 @@
+city,area_or_station,verified_connection,planning_use_case,check_before_booking,source_url,checked_on
+台北,機捷 A1 台北車站站區,機捷／臺鐵／高鐵／臺北捷運,跨運具接駁,核對住宿地址與地下街出口、最後一段步行動線。,https://www.tymetro.com.tw/tymetro-new/tw/_pages/travel-guide/road.php,2026-11-19
+新北,板橋站區,台灣高鐵,新北住宿及長途鐵路,核對酒店靠板橋車站還是府中，分開安排步行與轉乘。,https://www.thsrc.com.tw/,2026-11-19
+桃園,A18 高鐵桃園站周邊,機捷／台灣高鐵,隔日機場或高鐵,確認出發航廈；住在站區仍需核對步行、接駁與末班。,https://www.tymetro.com.tw/tymetro-new/tw/_pages/travel-guide/road.php,2026-11-19
+台中,烏日高鐵台中站周邊,高鐵／台鐵／捷運綠線,以高鐵和跨線轉乘為主,住宿靠高鐵入口或捷運入口會影響拖行李路線。,https://www.thsrc.com.tw/ArticleContent/3301e395-46b8-47aa-aa37-139e15708779,2026-11-19
+台中,台中市區站周邊,台鐵台中站,市中心行程,利用臺鐵銜接新烏日，高鐵班次另查。,https://www.thsrc.com.tw/ArticleContent/3301e395-46b8-47aa-aa37-139e15708779,2026-11-19

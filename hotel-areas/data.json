@@ -1,0 +1,47 @@
+[
+  {
+    "city": "台北",
+    "area_or_station": "機捷 A1 台北車站站區",
+    "verified_connection": "機捷／臺鐵／高鐵／臺北捷運",
+    "planning_use_case": "跨運具接駁",
+    "check_before_booking": "核對住宿地址與地下街出口、最後一段步行動線。",
+    "source_url": "https://www.tymetro.com.tw/tymetro-new/tw/_pages/travel-guide/road.php",
+    "checked_on": "2026-11-19"
+  },
+  {
+    "city": "新北",
+    "area_or_station": "板橋站區",
+    "verified_connection": "台灣高鐵",
+    "planning_use_case": "新北住宿及長途鐵路",
+    "check_before_booking": "核對酒店靠板橋車站還是府中，分開安排步行與轉乘。",
+    "source_url": "https://www.thsrc.com.tw/",
+    "checked_on": "2026-11-19"
+  },
+  {
+    "city": "桃園",
+    "area_or_station": "A18 高鐵桃園站周邊",
+    "verified_connection": "機捷／台灣高鐵",
+    "planning_use_case": "隔日機場或高鐵",
+    "check_before_booking": "確認出發航廈；住在站區仍需核對步行、接駁與末班。",
+    "source_url": "https://www.tymetro.com.tw/tymetro-new/tw/_pages/travel-guide/road.php",
+    "checked_on": "2026-11-19"
+  },
+  {
+    "city": "台中",
+    "area_or_station": "烏日高鐵台中站周邊",
+    "verified_connection": "高鐵／台鐵／捷運綠線",
+    "planning_use_case": "以高鐵和跨線轉乘為主",
+    "check_before_booking": "住宿靠高鐵入口或捷運入口會影響拖行李路線。",
+    "source_url": "https://www.thsrc.com.tw/ArticleContent/3301e395-46b8-47aa-aa37-139e15708779",
+    "checked_on": "2026-11-19"
+  },
+  {
+    "city": "台中",
+    "area_or_station": "台中市區站周邊",
+    "verified_connection": "台鐵台中站",
+    "planning_use_case": "市中心行程",
+    "check_before_booking": "利用臺鐵銜接新烏日，高鐵班次另查。",
+    "source_url": "https://www.thsrc.com.tw/ArticleContent/3301e395-46b8-47aa-aa37-139e15708779",
+    "checked_on": "2026-11-19"
+  }
+]

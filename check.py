@@ -41,6 +41,18 @@ def main():
         parser.error("交通資料有重複識別值")
     urls = {row["來源"] for row in rows}
     urls.update(re.findall(r"\]\((https://[^\s]+?)\)", (ROOT / "README.md").read_text()))
+    accommodation = ROOT / "hotel-areas"
+    if accommodation.is_dir():
+        import json
+        with (accommodation / "data.csv").open(encoding="utf-8", newline="") as stream:
+            hotel_rows = list(csv.DictReader(stream))
+        if not hotel_rows or hotel_rows != json.loads((accommodation / "data.json").read_text()):
+            parser.error("住宿資料的 CSV 和 JSON 內容不同或無資料")
+        hotel_keys = {(row["city"], row["area_or_station"]) for row in hotel_rows}
+        if len(hotel_keys) != len(hotel_rows) or any(not value for row in hotel_rows for value in row.values()):
+            parser.error("住宿資料有缺漏或重複列")
+        urls.update(row["source_url"] for row in hotel_rows)
+        urls.update(re.findall(r"\]\((https://[^\s]+?)\)", (accommodation / "README.md").read_text()))
     pages = ROOT / "docs" / "index.html"
     if pages.exists():
         from html import unescape

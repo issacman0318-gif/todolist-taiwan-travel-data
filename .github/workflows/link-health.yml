@@ -9,6 +9,7 @@ on:
       - travel-data.csv
       - check.py
       - 'docs/**'
+      - 'hotel-areas/**'
       - '.github/workflows/link-health.yml'
 permissions:
   contents: read
