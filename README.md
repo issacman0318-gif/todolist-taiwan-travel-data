@@ -16,7 +16,7 @@
 
 [下載 CSV](travel-data.csv)。欄位包括交通分類、站點、方式、行前查核事項、來源與核對日期。需要票價、班次或無障礙動線時，請在出發前查相應營運方。
 
-直接在瀏覽器開啟 [離線選站頁](docs/index.html) 可依下一段交通篩選。
+使用 [線上桃園機捷選站器](https://issacman0318-gif.github.io/todolist-taiwan-travel-data/) 依下一段交通篩選，也可下載 [離線 HTML](docs/index.html) 後以瀏覽器開啟。
 
 ## 使用方式
 
