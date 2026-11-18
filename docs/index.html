@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="按台北市區、新北環狀線或高鐵南下等需求，查桃園機場捷運轉乘站與住宿站區。">
+<title>桃園機捷轉乘選站｜Todolist Taiwan</title>
+<style>
+:root{color-scheme:light;--paper:#f5f7fb;--ink:#172342;--muted:#425171;--rail:#6142a2;--rule:#c9cde0;--white:#fff}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:1rem/1.65 "PingFang TC","Noto Sans TC",system-ui,sans-serif}
+header,main,footer{max-width:70rem;margin:auto;padding:1.5rem clamp(1rem,5vw,4rem)}
+header{padding-top:2.5rem;padding-bottom:1rem}h1{font-size:clamp(2rem,6vw,4rem);line-height:1.15;margin:1.25rem 0 .65rem}h2{line-height:1.3}
+nav{display:flex;gap:1.25rem;flex-wrap:wrap}a{color:#443078;text-underline-offset:.2em}a:focus-visible,select:focus-visible{outline:3px solid #6747bd;outline-offset:3px}
+.track{display:flex;justify-content:space-between;position:relative;list-style:none;padding:0;margin:2rem 0 1rem;max-width:38rem;color:var(--rail);font-weight:750}
+.track::before{content:"";position:absolute;left:0;right:0;top:.38rem;border-top:4px solid var(--rail)}
+.track li{position:relative;text-align:center}.track li::before{content:"";display:block;width:.85rem;height:.85rem;margin:auto auto .35rem;background:var(--white);border:3px solid var(--rail);border-radius:50%}
+section{margin-bottom:2.5rem}select{max-width:100%;padding:.48rem .8rem;color:var(--ink);background:var(--white);border:1px solid var(--muted);font:inherit}
+label{display:block;font-weight:700}#results,footer{color:var(--muted)}table{border-collapse:collapse;width:100%;background:var(--white)}
+caption{text-align:left;font-weight:700;padding:.7rem 0}th,td{border-block-end:1px solid var(--rule);padding:.75rem;text-align:left;vertical-align:top}
+thead{background:#e9e6f5}th[scope=row]{min-width:8rem}footer{border-block-start:1px solid var(--rule)}
+[hidden]{display:none!important}
+@media(max-width:38rem){table,tbody,tr,th[scope=row],td{display:block}thead{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}tbody tr{border-bottom:2px solid var(--rule);padding:.6rem .8rem}th,td{border:0;padding:.18rem 0}}
+</style>
+</head>
+<body>
+<header>
+<nav aria-label="頁面導覽"><a href="#compare">轉乘選站</a><a href="#stay">住宿攻略</a><a href="travel-data.csv" download>下載資料</a></nav>
+<h1>桃園機捷轉乘選站</h1>
+<p>從機場到住宿或下一段鐵路。選擇你的需求，再核對當天的停站、入口與步行路徑。</p>
+<ol class="track" aria-label="機捷部分站點順序"><li>A1</li><li>A3</li><li>A12</li><li>A13</li><li>A18</li></ol>
+</header>
+<main>
+<section id="compare" aria-labelledby="compare-title">
+<h2 id="compare-title">下一段要去哪裡？</h2>
+<label for="purpose">行程需求</label>
+<select id="purpose"><option value="">顯示所有選項</option><option>臺北市區／臺鐵</option><option>新北環狀線</option><option>高鐵南下</option><option>搭機航廈</option><option>住宿轉乘</option></select>
+<p id="results" role="status"></p>
+<table role="table">
+<caption>轉乘及住宿站區</caption>
+<thead role="rowgroup"><tr role="row"><th scope="col">站點</th><th scope="col">轉乘或住宿用途</th><th scope="col">行前核對</th></tr></thead>
+<tbody role="rowgroup"><tr data-purpose="臺北市區／臺鐵"><th scope="row">A1 台北車站</th><td>臺鐵、台灣高鐵、臺北捷運</td><td>各系統站區有步行距離，搭車前核對入口與出口。 <a href="https://www.tymetro.com.tw/tymetro-new/tw/_pages/travel-guide/road.php">來源</a></td></tr>
+<tr data-purpose="新北環狀線"><th scope="row">A3 新北產業園區</th><td>新北捷運環狀線</td><td>核對行車方向與當日服務。 <a href="https://www.tymetro.com.tw/tymetro-new/tw/_pages/travel-guide/road.php">來源</a></td></tr>
+<tr data-purpose="高鐵南下"><th scope="row">A18 高鐵桃園站</th><td>台灣高鐵</td><td>從 A12／A13 出發時查普通車停站，個別加班直達車須依公告。 <a href="https://www.tymetro.com.tw/tymetro-new/tw/_pages/travel-guide/road.php">來源</a></td></tr>
+<tr data-purpose="搭機航廈"><th scope="row">A12 機場第一航廈</th><td>桃園機場 T1</td><td>先按航空公司及航班確認航廈。 <a href="https://www.tymetro.com.tw/tymetro-new/tw/_pages/travel-guide/road.php">來源</a></td></tr>
+<tr data-purpose="搭機航廈"><th scope="row">A13 機場第二航廈</th><td>桃園機場 T2</td><td>回程查飯店附近車站至 T2 的時段。 <a href="https://www.tymetro.com.tw/tymetro-new/tw/_pages/travel-guide/road.php">來源</a></td></tr>
+<tr data-purpose="住宿轉乘"><th scope="row">A1 台北車站站區</th><td>多線轉乘住宿區域</td><td>比對是否能從對應月台沿地下通道走到住宿附近。 <a href="https://www.tymetro.com.tw/tymetro-new/tw/_pages/travel-guide/road.php">來源</a></td></tr>
+<tr data-purpose="住宿轉乘"><th scope="row">板橋站區</th><td>高鐵與市區交通住宿區域</td><td>從機捷出發時另查轉乘路線及月台。 <a href="https://www.thsrc.com.tw/">來源</a></td></tr>
+</tbody>
+</table>
+</section>
+<section id="stay"><h2>住宿站區攻略</h2><ul><li><a href="https://todolist-taiwan.com/taipei-where-to-stay/">臺北住宿區域比較</a></li><li><a href="https://todolist-taiwan.com/banqiao-where-to-stay/">板橋站周邊住宿選區</a></li></ul></section>
+</main>
+<footer>資料核對日期 <time datetime="2026-11-19">2026 年 11 月 19 日</time>。班次與進站安排以營運方公告為準。</footer>
+<script>
+const purpose = document.querySelector('#purpose');
+const rows = [...document.querySelectorAll('tbody tr')];
+const results = document.querySelector('#results');
+function filterStations() {
+  let visible = 0;
+  for (const row of rows) {
+    row.hidden = Boolean(purpose.value && row.dataset.purpose !== purpose.value);
+    if (!row.hidden) visible += 1;
+  }
+  results.textContent = '顯示 ' + visible + ' 項';
+}
+purpose.addEventListener('change', filterStations);
+filterStations();
+</script>
+</body>
+</html>

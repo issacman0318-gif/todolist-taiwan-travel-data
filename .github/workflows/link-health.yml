@@ -1,0 +1,27 @@
+name: 旅遊資料及連結檢查
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '23 2 * * 1'
+  push:
+    paths:
+      - README.md
+      - travel-data.csv
+      - check.py
+      - 'docs/**'
+      - '.github/workflows/link-health.yml'
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 check.py --strict --output link-health.md
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: link-health
+          path: link-health.md
+          retention-days: 30
