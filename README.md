@@ -18,6 +18,8 @@
 
 使用 [線上桃園機捷選站器](https://issacman0318-gif.github.io/todolist-taiwan-travel-data/) 依下一段交通篩選，也可下載 [離線 HTML](docs/index.html) 後以瀏覽器開啟。
 
+[桃園機場捷運轉乘圖卡（Pinterest）](https://www.pinterest.com/pin/710583647509591873/)整理 A1、A3 與 A18 三個轉乘選項，可以先用圖卡比較，再用選站器按行程篩選。
+
 ## 使用方式
 
 執行 `python3 plan.py "高鐵南下"`，或省略條件列出全部。工具使用 Python 3 標準函式庫。
