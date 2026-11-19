@@ -31,6 +31,6 @@
 
 ## 延伸住宿攻略
 
-- [台北住宿區域](https://todolist-taiwan.com/taipei-where-to-stay/)
-- [板橋住宿區域](https://todolist-taiwan.com/banqiao-where-to-stay/)
-- [台中住宿區域](https://todolist-taiwan.com/taichung-where-to-stay/)
+- [台北住宿推薦](https://todolist-taiwan.com/taipei-where-to-stay/)
+- [板橋住宿推薦](https://todolist-taiwan.com/banqiao-where-to-stay/)
+- [台中住宿推薦](https://todolist-taiwan.com/taichung-where-to-stay/)
